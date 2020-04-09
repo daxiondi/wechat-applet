@@ -1,0 +1,51 @@
+.container{
+  padding:15rpx;
+  /* text-align: center; */
+}
+.title{
+  font-size: 40rpx;
+  line-height: 10rpx;
+  margin: 80rpx 0rpx 35rpx 0rpx;
+  text-align: center;
+  color: #72c6b6;
+  font-weight:bold;
+}
+.title_pinyin{
+  font-size: 30rpx;
+  line-height: 10rpx;
+  margin: 0rpx 0rpx 100rpx 0rpx;
+  text-align: center;
+  color: #c7c7c9;
+  font-weight:bold;
+}
+.poster{
+  display:flex;
+  justify-content: center;
+}
+.poster image{
+  width:650rpx;
+  height: 650rpx;
+  border-radius: 10px;
+}
+.line{
+  text-align: center;
+  color: #72c6b6;
+  font-weight:bold;
+}
+.content{
+  text-indent: 20rpx; 
+  margin: 10rpx 0rpx 80rpx 0rpx;
+}
+.content text{
+  text-align: left;
+  font-size: 28rpx;
+  line-height: 35rpx;
+  color: #78818b;
+  font-weight:450;
+}
+.button{
+  width: 100rpx;
+  height:100rpx;
+  margin:20rpx auto;
+  border-radius: 50rpx;
+}

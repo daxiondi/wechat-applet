@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/classify/classify",
+    "pages/info/info"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#aadcd0",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "每日中药",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#78818b",
+    "selectedColor": "#72c6b6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/01.png",
+        "selectedIconPath": "images/02.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "药材",
+        "iconPath": "images/03.png",
+        "selectedIconPath": "images/04.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/05.png",
+        "selectedIconPath": "images/06.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

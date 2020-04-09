@@ -1,0 +1,110 @@
+page{
+background-image: url("http://m.qpic.cn/psc?/V119Da0S06f8jC/UVjGSBgujG6XwMFsQlvXRZNO0fXzrBmTkAAeuAQUhoyW6fb7GXlk.Bg2gMPqkt41*SbjH.sYJNAYf9.r*50vIA!!/b&bo=7gK2BAAAAAARB24!&rf=viewer_4");
+background-repeat:no-repeat;
+background-size:100% 100%;
+-moz-background-size:100% 100%;
+z-index: -1;
+}
+/* 登录页面 */
+.button1{
+  position:relative;
+  left:260rpx;
+  top:15rpx;
+  background-color: #fff;
+  color: #72c6b6;  
+}
+.button2{
+  position:relative;
+  left:15rpx;
+  top:15rpx;
+  background-color: #fff;
+  color: #72c6b6;
+}
+.myLogin{
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.myLogin image{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  }
+  .myLogin text{
+    color: white;
+  }
+  .tab {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 10rpx 0;
+  }
+   
+  .topTabSwiper {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    zoom: 1;
+  }
+   
+  .topTabSwiper:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+   
+  .tabBorer {
+    border-bottom: 1px solid #72c6b6;
+    color: #72c6b6;
+    width: 50%;
+  }
+   
+  .swiper {
+    width: 100%;
+  }
+   
+  .swiper_con {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 80rpx 0;
+  }
+  .news-list{
+    min-height: 600rpx;
+    padding: 15rpx;
+  }
+  .news-item{
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom:1rpx solid #72c6b6;
+    position: relative;
+  }
+  .news-item image{
+    height: 150rpx;
+    width: 230rpx;
+    margin: 10rpx;
+    border-radius: 10px;
+  }
+  .news-item .news-tile{
+    line-height: 150rpx;
+  }
+  .news-item text{
+    width:100%;
+    line-height: 60rpx;
+    font-size:25rpx;
+    color: #1e1e1f;
+  }
+  .news-item .news-time{
+    position: absolute;
+    right: 3rpx;
+    bottom: 5rpx;
+    font-size: 25rpx;
+    color: #576572;
+  }
+  .article_date {
+    width: 60rpx;
+    vertical-align: bottom;
+    font-size:25rpx;
+    color: #576572;
+  }

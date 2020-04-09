@@ -1,0 +1,16 @@
+<!--登录页面-->
+<!-- <textarea placeholder='请输入手机号' value='{{content}}' fixed="true" show-confirm-bar="{{false}}" /> -->
+<view>
+<form class="page__bd" bindsubmit="formSubmit">
+ <view class="section1">
+  <input name="userName" placeholder="请输入手机号" value="{{phone}}" />
+  </view>
+   <view class="section2">
+    <input name="passWord" placeholder="请输入密码" type="password" value="{{password}}"/>
+  </view>
+<button class="button" form-type="submit">登 录</button>
+</form>
+<navigator class="navigator" url="../../pages/register/register">
+<view>注册</view>
+</navigator>
+</view>

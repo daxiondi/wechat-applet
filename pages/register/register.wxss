@@ -1,0 +1,32 @@
+/* pages/register/register.wxss */
+page{
+  background-image: url("http://m.qpic.cn/psc?/V119Da0S06f8jC/UVjGSBgujG6XwMFsQlvXRSk7bMjY3Wh40Rl.xv9AHwua.B2uZRGp0JOnJr9zS2Lg.*0NI3JDK9wyWS9a0eXIRw!!/b&bo=7gI2BQAAAAARB.8!&rf=viewer_4");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  z-index: -1;
+}
+.section1{
+  position:relative;
+  left:230rpx;
+  top:655rpx;
+}
+.section2{
+  position:relative;
+  left:230rpx;
+  top:730rpx;
+}
+.section3{
+  position:relative;
+  left:230rpx;
+  top:805rpx;
+}
+.button{
+  position:relative;
+  top:835rpx;
+  width: 60%;
+  margin-top: 20rpx;
+  background-color: #72c6b6;
+  color: white;
+  border-radius: 98rpx;
+}

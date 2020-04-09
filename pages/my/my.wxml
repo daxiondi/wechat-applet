@@ -1,0 +1,48 @@
+<!--登录页面-->
+<view class="myLogin">
+  <block wx:if="{{user_id}}">
+    <button class="button1" bindtap="loginout">注销</button>
+    <image src="{{src}}"></image>
+    <text style="color:#72c6b6">{{name}}</text>
+  </block> 
+  <button class="button2" wx:else  bindtap="login">未登录，点击登录</button>
+</view>
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>文章</view>
+
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>中药</view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+  <swiper-item>
+
+  <view wx:if ="{{user_id}}" class="news-list">
+  <view class="news-item" wx:for="{{articles}}" wx:key="list">
+    <view class="news-img"><image src="{{item.article_poster}}"></image></view>
+    <view class="news-tile"> <text bindtap = 'goToDetail' data-id="{{item.article_id}}">{{item.article_title}}</text></view>
+    <view class="news-time">{{item.collect_time}}</view>
+  </view>
+</view>
+
+    <!--未登录-->
+    <view wx:else class='swiper_con'>无</view>
+
+  </swiper-item>
+  <swiper-item>
+  
+<view wx:if ="{{user_id}}" class="news-list">
+  <view class="news-item" wx:for="{{goods}}" wx:key="list">
+    <view class="news-img">
+      <image src="{{item.goods_poster}}"></image>
+    </view>
+    <view class="news-tile">
+      <text bindtap = 'goToInfo' data-id="{{item.goods_id}}">{{item.goods_name}}</text>
+    </view>
+    <view class="news-time">{{item.collect_time}}</view>
+    
+  </view>
+</view>
+    <!--未登录-->
+    <view wx:else class='swiper_con'>无</view>
+
+  </swiper-item>
+</swiper>

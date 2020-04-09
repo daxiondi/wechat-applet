@@ -1,0 +1,23 @@
+<!-- 幻灯片 -->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+  <view wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+    <swiper-item>
+      <image src="{{item.src}}"></image>
+    </swiper-item>
+  </view>
+</swiper>
+<text>▌中药小百科</text>
+<!-- 新闻列表 -->
+
+  <view class="article-list">
+  <view class="article-item" wx:for="{{list}}" wx:key="list">
+    <view class="article-img">
+      <image src="{{item.article_poster}}" ></image>
+    </view>
+    <view class="article">
+      <text bindtap = 'goToDetail' data-id="{{item.article_id}}">{{item.article_title}}</text>
+    </view>
+    <view class="article-date">{{item.article_date}}</view>
+  </view>
+</view>
+

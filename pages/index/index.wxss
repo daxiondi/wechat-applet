@@ -1,0 +1,55 @@
+/* 幻灯片部分 */
+swiper{
+  height: 300rpx;
+  width:100%;
+}
+swiper image{
+  height: 100%;
+  width:100%;
+}
+text{
+  color: #72c6b6;
+}
+.article-list{
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+
+.article-item{
+  display: flex;
+  /*flex-direction: row;*/
+  flex-wrap: nowrap;
+  border-bottom:1rpx solid #72c6b6;
+  position: relative;
+}
+.article-item .article{
+  padding-top: 65rpx;
+}
+.article-item image{
+  height: 150rpx;
+  width: 300rpx;
+  margin: 10rpx;
+  border-radius: 10px;
+}
+.article-item text{
+  /*width:100%;*/
+  font-size:25rpx;
+  color: #78818b;
+  text-align: justify;
+}
+
+/* .article_date text{
+  width: 20rpx;
+  vertical-align: text-bottom;
+  text-align:right;
+  font-size:25rpx;
+  color: #78818b;
+} */
+
+.article-date{
+  position: absolute;
+  right: 3rpx;
+  bottom: 5rpx;
+  font-size:25rpx;
+  color: #78818b;
+}

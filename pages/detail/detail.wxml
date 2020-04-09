@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="title">{{article.article_title}}</view>
+  <view class="poster">
+    <image src="{{article.article_poster}}"></image>
+  </view>
+  <view class="line">————————————————————</view>
+  <view class="content">
+    <text>{{article.article_description}}</text>
+  </view>
+  <view class="add_date">{{article.article_date}}</view>
+  <button plain bindtap = "addFavorites">❤</button>
+</view>
